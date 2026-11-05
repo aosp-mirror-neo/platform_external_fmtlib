@@ -52,7 +52,10 @@ cc_defaults {
     srcs: ["src/format.cc"],
     local_include_dirs: ["include"],
     export_include_dirs: ["include"],
-    visibility: ["//system/libbase"],
+    visibility: [
+        "//system/libbase",
+        "//tools/rootcanal:__subpackages__",
+    ],
     min_sdk_version: "29",
 }
 
